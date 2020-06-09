@@ -56,7 +56,7 @@ for i in range(1, 201):
     cdate = fake.date_between('-100y', '-18y')
     status = random.choice(mywordlist)
     f.write(
-        "('{}', {}, '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}')\n"
+        "('{}', {}, '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}')\n"
         .format(first_name,
                 f"'{middle_name}'" if middle_name != "NULL" else middle_name,
                 last_name, street, building_number, addr_zip, addr__city,
