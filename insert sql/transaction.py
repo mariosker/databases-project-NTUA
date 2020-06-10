@@ -21,12 +21,14 @@ def random_date():
     minutes = "{0:02d}".format(minutes)
     secs = "{0:02d}".format(secs)
 
+    year = random.randint(2018, 2020)
     months = "{0:02d}".format(random.randint(1, 12))
-    days = "{0:02d}".format(random.randint(1, 31))
-
-    return (
-        f"{random.randint(2018,2020)}-{months}-{days} {hours}:{minutes}:{secs}"
-    )
+    days = "{0:02d}".format(random.randint(1, 28))
+    while True:
+        a = datetime(int(year), int(months), int(days))
+        if a.weekday() != 'Sunday':
+            a = f"{year}-{months}-{days} {hours}:{minutes}:{secs}"
+            return (a)
 
 
 payments = ["Κάρτα", "Μετρητά"]
