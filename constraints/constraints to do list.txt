@@ -1,0 +1,14 @@
+----- contains ------
+product quantity inserted should be lower or equal to the total number of products in the supermarket
+
+----- customer ------
+age constraint (should be 18+)
+
+---- has -----
+add constraint for shelf and aisle ????
+
+---- products -----
+include constraints for new products ???? 
+
+---- transaction ----
+constraint for datetime 
