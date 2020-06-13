@@ -9,7 +9,7 @@ pairs = set()
 with open("has.sql", 'w') as f:
 
     f.write(
-        "INSERT INTO `has`(`product_id`, `store_id`, `stored_quantity`, `aisle`, `shelve`, `current_price`, `has_id`) VALUES\n"
+        "INSERT INTO `has`(`product_id`, `store_id`, `stored_quantity`, `aisle`, `shelf`, `has_id`) VALUES\n"
     )
 
     for t in range(1, 501):
@@ -23,8 +23,7 @@ with open("has.sql", 'w') as f:
         stored_quantity = random.randint(1, 200)
         aisle = random.randint(1, 60)
         shelve = random.randint(1, 10)
-        current_price = random.randint(1, 100)
         has_id = t
         f.write(
-            f"({product_id},{store_id},{stored_quantity},{aisle},{shelve},{current_price},{has_id})"
+            f"({product_id},{store_id},{stored_quantity},{aisle},{shelve},{has_id})"
             + (",\n" if t != 500 else "\n"))
