@@ -7,3 +7,8 @@ ADD CONSTRAINT CHK_category CHECK (category = 'Φρέσκα Προϊόντα' OR
 
 ALTER TABLE store
 ADD CONSTRAINT CHK_city CHECK (city = 'Αθήνα' OR city = 'Βέροια' OR city = 'Θεσσαλονίκη')
+
+---- customer age trigger -----
+---IF (YEAR(new.birth_date) > (YEAR(CURRENT_DATE) - 18)) 
+---THEN SIGNAL SQLSTATE '02000' SET MESSAGE_TEXT = 'The customer should be older than 18 years old.';
+---END IF
