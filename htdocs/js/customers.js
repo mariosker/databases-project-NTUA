@@ -43,4 +43,50 @@ $(document).ready(function () {
       });
     },
   });
+
+  $("#insert_customer_info").click(() => {
+    var street_address = $("#street_address").val();
+    var building_number_address = $("#building_number_address").val();
+    var zip_address = $("#zip_address").val();
+    var city_address = $("#city_address").val();
+
+    var first_name = $("#first_name").val();
+    var middle_name = $("#middle_name").val();
+    var last_name = $("#last_name").val();
+
+    var birth_date = $("#birth_date").val();
+    var phone_number = $("#phone_number").val();
+    var gender = $("#gender").val();
+    var status = $("#status").val();
+    var nr_kids = $("#nr_kids").val();
+
+    $(document).ready(function () {
+      $.ajax({
+        type: "post",
+        url: "services/insert_customer.php",
+        data: {
+          first_name: first_name,
+          middle_name: middle_name,
+          last_name: last_name,
+          street: street_address,
+          number: building_number_address,
+          zip: zip_address,
+          city: city_address,
+          birth_date: birth_date,
+          phone_number: phone_number,
+          gender: gender,
+          status: status,
+          nr_kids: nr_kids,
+        },
+        dataType: "json",
+        success: function (response) {
+          console.log(response);
+          if (response.status == "1") {
+            alert(response.successmessage);
+            window.location.reload();
+          } else alert(response.errormessage);
+        },
+      });
+    });
+  });
 });
