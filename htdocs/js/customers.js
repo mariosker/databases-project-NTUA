@@ -52,7 +52,14 @@ $(document).ready(function () {
                 data-target="#edit_customer_modal"
               >
               <i class="fas fa-edit"></i>
-              </button>` +
+              </button> <button
+              id="delete_customer` +
+            e.card_id +
+            `"
+              class="btn btn-sm btn-secondary ml-2 text-center"
+            >
+            <i class="fas fa-trash"></i>
+            </button>` +
             "</td>"
         );
 
@@ -98,6 +105,23 @@ $(document).ready(function () {
                 } else alert(response.errormessage);
               },
             });
+          });
+        });
+        $("#delete_customer" + e.card_id).click(() => {
+          $.ajax({
+            type: "post",
+            url: "services/delete_customer.php",
+            data: {
+              card_id: e.card_id,
+            },
+            dataType: "json",
+            success: function (response) {
+              console.log(response);
+              if (response.status == "1") {
+                alert(response.successmessage);
+                window.location.reload();
+              } else alert(response.errormessage);
+            },
           });
         });
       });

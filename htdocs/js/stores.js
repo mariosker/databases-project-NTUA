@@ -34,6 +34,13 @@ $(document).ready(function () {
                 data-target="#edit_store_modal"
               >
               <i class="fas fa-edit"></i>
+              </button> <button
+                id="delete_store` +
+            e.store_id +
+            `"
+                class="btn btn-sm btn-secondary ml-2 text-center"
+              >
+              <i class="fas fa-trash"></i>
               </button>` +
             "</td>"
         );
@@ -67,6 +74,23 @@ $(document).ready(function () {
                 } else alert(response.errormessage);
               },
             });
+          });
+        });
+        $("#delete_store" + e.store_id).click(() => {
+          $.ajax({
+            type: "post",
+            url: "services/delete_store.php",
+            data: {
+              id: e.store_id,
+            },
+            dataType: "json",
+            success: function (response) {
+              console.log(response);
+              if (response.status == "1") {
+                alert(response.successmessage);
+                window.location.reload();
+              } else alert(response.errormessage);
+            },
           });
         });
       });
