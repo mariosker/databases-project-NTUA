@@ -1,10 +1,9 @@
 $(document).ready(function () {
   $.ajax({
     type: "get",
-    url: "services/get_customers.php",
+    url: "services/get_all_customers.php",
     dataType: "json",
     success: function (response) {
-      //   console.log(response);
       response.forEach((e) => {
         $("#customerst tbody").append("<tr id='" + e.card_id + "'></tr>");
         $("#customerst tr#" + e.card_id).append(

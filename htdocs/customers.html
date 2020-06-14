@@ -47,6 +47,9 @@
             <a class="nav-link" href="./index.html">Sales</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="./products.html">Products</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="./customers.html">Customers</a>
           </li>
           <li class="nav-item">
@@ -248,160 +251,161 @@
             </thead>
             <tbody></tbody>
           </table>
-                    <!-- INFO: Modal -->
-                    <div
-                    class="modal fade"
-                    id="edit_customer_modal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="edit_customer_modalLabel"
-                    aria-hidden="true"
+          <!-- INFO: Modal -->
+          <div
+            class="modal fade"
+            id="edit_customer_modal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="edit_customer_modalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="edit_customer_modalLabel">
+                    Edit Customer info
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
                   >
-                    <div class="modal-dialog modal-lg" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="edit_customer_modalLabel">
-                            Edit Customer info
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <form>
-                            <div class="form-group">
-                              <label class="mt-2">Customer's Name</label>
-                              <div class="input-group">
-                                <input
-                                  type="text"
-                                  id="edit_first_name"
-                                  placeholder="First name"
-                                  aria-label="First name"
-                                  class="form-control"
-                                  required
-                                />
-                                <input
-                                  type="text"
-                                  id="edit_middle_name"
-                                  placeholder="Middle Name"
-                                  aria-label="Middle Name"
-                                  class="form-control"
-                                />
-                                <input
-                                  type="text"
-                                  id="edit_last_name"
-                                  placeholder="Last name"
-                                  aria-label="Last Name"
-                                  class="form-control"
-                                  required
-                                />
-                              </div>
-                              <label class="mt-2" for="gender">Gender</label>
-                              <select class="form-control" id="edit_gender">
-                                <option>Αντρας</option>
-                                <option>Γυναίκα</option>
-                              </select>
-                              <label class="mt-2">Customer's Address</label>
-                              <div class="input-group">
-                                <input
-                                  type="text"
-                                  id="edit_street_address"
-                                  placeholder="Street"
-                                  aria-label="First name"
-                                  class="form-control"
-                                  required
-                                />
-                                <input
-                                  type="text"
-                                  id="edit_building_number_address"
-                                  placeholder="Building Number"
-                                  aria-label="First name"
-                                  class="form-control"
-                                  required
-                                />
-                                <input
-                                  type="number"
-                                  id="edit_zip_address"
-                                  placeholder="Zip"
-                                  aria-label="First name"
-                                  class="form-control"
-                                  min="0"
-                                  required
-                                />
-                                <input
-                                  type="text"
-                                  id="edit_city_address"
-                                  placeholder="City"
-                                  aria-label="First name"
-                                  class="form-control"
-                                  required
-                                />
-                              </div>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label class="mt-2">Customer's Name</label>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          id="edit_first_name"
+                          placeholder="First name"
+                          aria-label="First name"
+                          class="form-control"
+                          required
+                        />
+                        <input
+                          type="text"
+                          id="edit_middle_name"
+                          placeholder="Middle Name"
+                          aria-label="Middle Name"
+                          class="form-control"
+                        />
+                        <input
+                          type="text"
+                          id="edit_last_name"
+                          placeholder="Last name"
+                          aria-label="Last Name"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <label class="mt-2" for="gender">Gender</label>
+                      <select class="form-control" id="edit_gender">
+                        <option>Αντρας</option>
+                        <option>Γυναίκα</option>
+                      </select>
+                      <label class="mt-2">Customer's Address</label>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          id="edit_street_address"
+                          placeholder="Street"
+                          aria-label="First name"
+                          class="form-control"
+                          required
+                        />
+                        <input
+                          type="text"
+                          id="edit_building_number_address"
+                          placeholder="Building Number"
+                          aria-label="First name"
+                          class="form-control"
+                          required
+                        />
+                        <input
+                          type="number"
+                          id="edit_zip_address"
+                          placeholder="Zip"
+                          aria-label="First name"
+                          class="form-control"
+                          min="0"
+                          required
+                        />
+                        <input
+                          type="text"
+                          id="edit_city_address"
+                          placeholder="City"
+                          aria-label="First name"
+                          class="form-control"
+                          required
+                        />
+                      </div>
 
-                              <label for="birth_date" class="mt-2"
-                                >Customer's Birth Date</label
-                              >
-                              <input
-                                type="date"
-                                class="form-control"
-                                id="edit_birth_date"
-                                required
-                              />
+                      <label for="birth_date" class="mt-2"
+                        >Customer's Birth Date</label
+                      >
+                      <input
+                        type="date"
+                        class="form-control"
+                        id="edit_birth_date"
+                        required
+                      />
 
-                              <label for="phone_number" class="mt-2"
-                                >Customer's Phone Number</label
-                              >
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="edit_phone_number"
-                                required
-                              />
+                      <label for="phone_number" class="mt-2"
+                        >Customer's Phone Number</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="edit_phone_number"
+                        required
+                      />
 
-                              <label class="mt-2">Status</label>
-                              <div class="input-group">
-                                <input
-                                  type="text"
-                                  id="edit_status"
-                                  placeholder="Relationship status"
-                                  aria-label="Relationship status"
-                                  class="form-control"
-                                />
-                                <input
-                                  type="number"
-                                  id="edit_nr_kids"
-                                  placeholder="Kids"
-                                  aria-label="Kids"
-                                  class="form-control"
-                                  min="0"
-                                />
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                        <div class="modal-footer">
-                          <button
-                            type="button"
-                            class="btn btn-light"
-                            data-dismiss="modal"
-                          >
-                            Close
-                          </button>
-                          <button
-                            type="button"
-                            id="edit_customer_info"
-                            class="btn btn-secondary"
-                          >
-                            Edit
-                          </button>
-                        </div>
+                      <label class="mt-2">Status</label>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          id="edit_status"
+                          placeholder="Relationship status"
+                          aria-label="Relationship status"
+                          class="form-control"
+                        />
+                        <input
+                          type="number"
+                          id="edit_nr_kids"
+                          placeholder="Kids"
+                          aria-label="Kids"
+                          class="form-control"
+                          min="0"
+                        />
                       </div>
                     </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-light"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button
+                    type="button"
+                    id="edit_customer_info"
+                    class="btn btn-secondary"
+                  >
+                    Edit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
