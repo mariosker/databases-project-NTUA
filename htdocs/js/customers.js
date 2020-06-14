@@ -40,6 +40,66 @@ $(document).ready(function () {
           "<td>" + e.phone_number + "</td>"
         );
         $("#customerst tr#" + e.card_id).append("<td>" + e.points + "</td>");
+
+        $("#customerst tr#" + e.card_id).append(
+          "<td align='center'>" +
+            `<button
+                id="edit_customer` +
+            e.card_id +
+            `"
+                class="btn btn-sm btn-secondary ml-2 text-center"
+                data-toggle="modal"
+                data-target="#edit_customer_modal"
+              >
+              <i class="fas fa-edit"></i>
+              </button>` +
+            "</td>"
+        );
+
+        $("#edit_customer" + e.card_id).click(() => {
+          $("#edit_first_name").val(e.first_name);
+          $("#edit_middle_name").val(e.middle_name);
+          $("#edit_last_name").val(e.last_name);
+          $("#edit_gender").val(e.gender);
+          $("#edit_street_address").val(e.street);
+          $("#edit_building_number_address").val(e.number);
+          $("#edit_zip_address").val(e.zip);
+          $("#edit_city_address").val(e.city);
+          $("#edit_birth_date").val(e.birth_date);
+          $("#edit_phone_number").val(e.phone_number);
+          $("#edit_status").val(e.relationship_status);
+          $("#edit_nr_kids").val(e.nr_kids);
+          $("#edit_customer_info").click(() => {
+            $.ajax({
+              type: "post",
+              url: "services/edit_customer.php",
+              data: {
+                card_id: e.card_id,
+                points: e.points,
+                first_name: $("#edit_first_name").val(),
+                middle_name: $("#edit_middle_name").val(),
+                last_name: $("#edit_last_name").val(),
+                street: $("#edit_street_address").val(),
+                number: $("#edit_building_number_address").val(),
+                zip: $("#edit_zip_address").val(),
+                city: $("#edit_city_address").val(),
+                birth_date: $("#edit_birth_date").val(),
+                phone_number: $("#edit_phone_number").val(),
+                gender: $("#edit_gender").val(),
+                status: $("#edit_status").val(),
+                nr_kids: $("#edit_nr_kids").val(),
+              },
+              dataType: "json",
+              success: function (response) {
+                console.log(response);
+                if (response.status == "1") {
+                  alert(response.successmessage);
+                  window.location.reload();
+                } else alert(response.errormessage);
+              },
+            });
+          });
+        });
       });
     },
   });

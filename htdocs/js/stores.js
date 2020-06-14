@@ -22,6 +22,53 @@ $(document).ready(function () {
           "<td>" + e.operating_hours + "</td>"
         );
         $("#storest tr#" + e.store_id).append("<td>" + e.store_area + "</td>");
+
+        $("#storest tr#" + e.store_id).append(
+          "<td align='center'>" +
+            `<button
+                id="edit_store` +
+            e.store_id +
+            `"
+                class="btn btn-sm btn-secondary ml-2 text-center"
+                data-toggle="modal"
+                data-target="#edit_store_modal"
+              >
+              <i class="fas fa-edit"></i>
+              </button>` +
+            "</td>"
+        );
+
+        $("#edit_store" + e.store_id).click(() => {
+          $("#edit_street_address").val(e.street);
+          $("#edit_building_number_address").val(e.number);
+          $("#edit_zip_address").val(e.zip);
+          $("#edit_city_address").val(e.city);
+          $("#edit_stores_operating_hours").val(e.operating_hours);
+          $("#edit_stores_area").val(e.store_area);
+          $("#edit_store_info").click(() => {
+            $.ajax({
+              type: "post",
+              url: "services/edit_store.php",
+              data: {
+                store_id: e.store_id,
+                store_area: $("#edit_stores_area").val(),
+                operating_hours: $("#edit_stores_operating_hours").val(),
+                street: $("#edit_street_address").val(),
+                number: $("#edit_building_number_address").val(),
+                zip: $("#edit_zip_address").val(),
+                city: $("#edit_city_address").val(),
+              },
+              dataType: "json",
+              success: function (response) {
+                console.log(response);
+                if (response.status == "1") {
+                  alert(response.successmessage);
+                  window.location.reload();
+                } else alert(response.errormessage);
+              },
+            });
+          });
+        });
       });
     },
   });
