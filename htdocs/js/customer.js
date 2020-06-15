@@ -53,4 +53,18 @@ $(document).ready(function () {
       }
     },
   });
+  $.ajax({
+    type: "POST",
+    url: "services/most_popular_products_bought_by_customer.php",
+    data: { card_id: id },
+    dataType: "JSON",
+    success: function (response) {
+      response.forEach((e) => {
+        $("#popular_prods tbody").append("<tr></tr>");
+        $("#popular_prods tr").append("<td>" + e.product_name + "</td>");
+        $("#popular_prods tr").append("<td>" + e.category + "</td>");
+        $("#popular_prods tr").append("<td>" + e.number_of_times + "</td>");
+      });
+    },
+  });
 });
