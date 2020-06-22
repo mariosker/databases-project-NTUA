@@ -60,10 +60,14 @@ $(document).ready(function () {
     dataType: "JSON",
     success: function (response) {
       response.forEach((e) => {
-        $("#popular_prods tbody").append("<tr></tr>");
-        $("#popular_prods tr").append("<td>" + e.product_name + "</td>");
-        $("#popular_prods tr").append("<td>" + e.category + "</td>");
-        $("#popular_prods tr").append("<td>" + e.number_of_times + "</td>");
+        $("#popular_prods tbody").append("<tr id='" + e.product_id + "'></tr>");
+        $("#popular_prods tr#" + e.product_id).append(
+          "<td>" + e.product_name + "</td>"
+        );
+        $("#popular_prods tr#" + e.product_id).append(
+          "<td>" + e.category + "</td>"
+        );
+        $("#popular_prods tr#" + e.product_id).append("<td>" + e.cnt + "</td>");
       });
     },
   });

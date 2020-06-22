@@ -16,7 +16,7 @@ $(document).ready(function () {
         $("#customerst tr#" + e.card_id).append(
           "<td> <a href='customer.html?id=" +
             e.card_id +
-            "'>" +
+            "' target='_blank'>" +
             e.last_name +
             " " +
             e.first_name +
