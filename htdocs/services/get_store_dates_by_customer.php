@@ -4,7 +4,7 @@ include_once "./connection.php";
 $customer_card_id = $_POST["card_id"];
 
 $sql = "
-SELECT * FROM `most_frequent_products_by_id` where card_id = ? ORDER by cnt desc limit 10
+SELECT * FROM transactions_with_customers WHERE card_id = ?
 ";
 
 

@@ -1,0 +1,108 @@
+---------------------------------------------
+transaction and price per product
+---------------------------------------------
+
+SELECT
+    *
+FROM
+    (
+    SELECT
+        *
+    FROM
+        purchase
+    NATURAL JOIN CONTAINS
+) AS T
+JOIN latest_prices WHERE has_id =(
+    SELECT
+        has_id
+    FROM
+        has
+    WHERE
+        product_id = T.product_id AND store_id = T.store_id
+)
+---------------------------------------------
+each product has total price
+---------------------------------------------
+
+SELECT
+    *, quantity_bought*price
+FROM
+    (
+    SELECT
+        *
+    FROM
+        purchase
+    NATURAL JOIN CONTAINS
+) AS T
+JOIN latest_prices WHERE has_id =(
+    SELECT
+        has_id
+    FROM
+        has
+    WHERE
+        product_id = T.product_id AND store_id = T.store_id
+)
+---------------------------------------------
+Transaction id per total cost
+---------------------------------------------
+SELECT
+        transaction_id,
+        SUM(quantity_bought * price) AS total
+    FROM
+        (
+        SELECT
+            *
+        FROM
+            purchase
+        NATURAL JOIN CONTAINS
+    ) AS T
+JOIN latest_prices WHERE has_id =(
+    SELECT
+        has_id
+    FROM
+        has
+    WHERE
+        product_id = T.product_id AND store_id = T.store_id
+)
+GROUP BY
+    transaction_id
+
+------------------------------------
+FULL transaction table
+------------------------------------
+SELECT
+    transaction_id,
+    CONCAT(
+        first_name,
+        " ",
+        COALESCE(middle_name, ''),
+        " ",
+        last_name
+    ) AS NAME,
+    CONCAT(
+        street,
+        " ",
+        NUMBER,
+        ", ",
+        zip,
+        " ",
+        city
+    ) AS store_name,
+    date_time,
+    total,
+    payment_type,
+    0.10 * total
+FROM
+    transactions_with_customers
+NATURAL JOIN transaction_total_cost NATURAL JOIN(
+    SELECT
+        first_name,
+        middle_name,
+        last_name,
+        card_id
+    FROM
+        customer
+) AS C
+ORDER BY
+    `transactions_with_customers`.`date_time`
+DESC
