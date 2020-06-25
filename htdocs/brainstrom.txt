@@ -106,3 +106,14 @@ NATURAL JOIN transaction_total_cost NATURAL JOIN(
 ORDER BY
     `transactions_with_customers`.`date_time`
 DESC
+
+--------------------------------
+
+SELECT * FROM
+transactions
+WHERE transaction_id IN (SELECT transaction_id FROM transactions NATURAL JOIN contains NATURAL JOIN products WHERE category = ?)
+and store_name = ?
+and DATE(date_time) = ?
+and transaction_id IN (SELECT transaction_id FROM contains GROUP BY transaction_id HAVING SUM(quantity_bought) = ?)
+and total = ?
+and payment_type = ?

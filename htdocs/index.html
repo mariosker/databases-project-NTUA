@@ -29,6 +29,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
     />
+
     <!-- DEBUG: -->
     <script type="text/javascript" src="http://livejs.com/live.js"></script>
   </head>
@@ -79,86 +80,6 @@
       <div class="row p-2">
         <!-- Side panel for selecting what to view and what to filter out -->
         <div class="col-3 sticky-top">
-          <!-- Card for selecting what to view in the table -->
-          <!-- <div class="card">
-            <div class="card-header">
-              Select view
-            </div>
-            <div class="card-body">
-              <div class="btn-group-vertical" style="width: 100%;">
-                <button
-                  type="button"
-                  class="btn btn-light btn-outline-secondary mt-1"
-                  style="width: 100%;"
-                  data-toggle="button"
-                  aria-pressed="false"
-                  autocomplete="off"
-                >
-                  Date
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-light btn-outline-secondary mt-1"
-                  style="width: 100%;"
-                  data-toggle="button"
-                  aria-pressed="false"
-                  autocomplete="off"
-                >
-                  Customer
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-light btn-outline-secondary mt-1"
-                  style="width: 100%;"
-                  data-toggle="button"
-                  aria-pressed="false"
-                  autocomplete="off"
-                >
-                  Store
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-light btn-outline-secondary mt-1"
-                  style="width: 100%;"
-                  data-toggle="button"
-                  aria-pressed="false"
-                  autocomplete="off"
-                >
-                  Total price
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-light btn-outline-secondary mt-1"
-                  style="width: 100%;"
-                  data-toggle="button"
-                  aria-pressed="false"
-                  autocomplete="off"
-                >
-                  Products quantity
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-light btn-outline-secondary mt-1"
-                  style="width: 100%;"
-                  data-toggle="button"
-                  aria-pressed="false"
-                  autocomplete="off"
-                >
-                  Payment type
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-light btn-outline-secondary mt-1"
-                  style="width: 100%;"
-                  data-toggle="button"
-                  aria-pressed="false"
-                  autocomplete="off"
-                >
-                  Products
-                </button>
-              </div>
-            </div>
-          </div> -->
           <!-- card containing filters for objects in the table -->
           <div class="card mt-1">
             <div class="card-header">
@@ -167,19 +88,20 @@
             <div class="card-body">
               <!-- FILTER STARTS HERE -->
               <form>
-                <div class="form-group">
+                <div id="filterform" class="form-group">
                   <label for="filtertransactioninstore"
                     >Transaction happened in:</label
                   >
 
                   <select
                     id="filtertransactioninstore"
-                    class="form-control selectpicker"
+                    title="Nothing Selected"
+                    class="form-control selectpicker border"
                     data-actions-box="true"
-                    multiple
                     data-live-search="true"
                     data-selected-text-format="count > 1"
                     data-width="100%"
+                    data-style="btn-white"
                   ></select>
                   <label for="trans_date">Transaction happend at:</label>
                   <input type="date" id="trans_date" class="form-control" />
@@ -189,8 +111,11 @@
                   <select
                     width="100%"
                     id="choose_product_category"
-                    class="form-control selectpicker"
+                    class="form-control selectpicker border"
+                    title="Nothing Selected"
+                    data-style="btn-white"
                   >
+                    <option disabled selected value="">Nothing Selected</option>
                     <option>Φρέσκα Προϊόντα</option>
                     <option>Είδη Ψυγείου</option>
                     <option>Είδη Κάβας</option>
@@ -199,7 +124,7 @@
                     <option>Προϊόντα για Κατοικίδια</option>
                   </select>
                   <label for="input_number_of_products"
-                    >Total number of products:</label
+                    >Total number of products less than:</label
                   >
                   <input
                     type="number"
@@ -208,7 +133,7 @@
                     id="input_number_of_products"
                   />
                   <label for="input_total_cost"
-                    >Total amount of Transaction:</label
+                    >Total amount of Transaction less than:</label
                   >
                   <input
                     type="number"
@@ -219,29 +144,26 @@
                   <label for="select_trans_way">Transaction made with:</label>
                   <select
                     width="100%"
-                    class="form-control selectpicker"
+                    class="form-control selectpicker border"
                     id="select_trans_way"
+                    title="Nothing Selected"
+                    data-style="btn-white"
                   >
+                    <option disabled selected value="">Nothing Selected</option>
                     <option>Μετρητά</option>
                     <option>Κάρτα</option>
                   </select>
-                  <button
-                    type="submit"
-                    class="btn btn-secondary btn-block mt-2"
-                  >
-                    Submit
-                  </button>
                 </div>
+                <button type="reset" class="btn btn-secondary btn-block">
+                  Reset
+                </button>
               </form>
             </div>
           </div>
         </div>
         <!-- Main panel for housing he table containing sales -->
         <div class="col-9">
-          <div class="card">
-            <!-- <div class="card-header">
-              Table of Sales
-            </div> -->
+          <div class="card mt-1">
             <div class="card-body">
               <table
                 id="transactionstable"

@@ -1,7 +1,17 @@
 <?php
 include_once "./connection.php";
 
-$sql = "SELECT CONCAT(street, ', ',city) as storename FROM store";
+$sql = '
+SELECT store_id, CONCAT(
+    street,
+    " ",
+    number,
+    ", ",
+    zip,
+    " ",
+    city
+) AS storename FROM store
+';
 $result = $conn->query($sql);
 
 $res = $result->fetch_all(MYSQLI_ASSOC);
