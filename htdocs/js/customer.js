@@ -20,8 +20,14 @@ $(document).ready(function () {
     data: dataString,
     dataType: "JSON",
     success: function (data) {
-      console.log(data);
       if (data) {
+        var c_name =
+          "MyStore- " +
+          data.last_name +
+          " " +
+          data.first_name +
+          (data.middle_name == null ? "" : " " + data.middle_name);
+        document.title = c_name;
         $("#name").text(
           data.last_name +
             " " +

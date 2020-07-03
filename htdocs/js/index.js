@@ -17,7 +17,7 @@ function retrieve_data() {
   });
 }
 
-var page_limit = 50;
+var page_limit = 25;
 var page_number = 1;
 
 function display(data) {
@@ -32,7 +32,11 @@ function display(data) {
       "<td>" + e.transaction_id + "</td>"
     );
     $("#transactionstable tr#" + e.transaction_id).append(
-      "<td>" + e.NAME + "</td>"
+      "<td> <a href='customer.html?id=" +
+        e.card_id +
+        "' target='_blank'>" +
+        e.NAME +
+        "</a></td>"
     );
     $("#transactionstable tr#" + e.transaction_id).append(
       "<td>" + e.store_name + "</td>"
