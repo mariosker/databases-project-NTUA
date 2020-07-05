@@ -21,7 +21,7 @@ if (isset($_GET["input_total_cost"]) and $_GET["input_total_cost"] != "")
     $sql = $sql . "and total < " . $_GET["input_total_cost"] . " ";
 
 if (isset($_GET["select_trans_way"]) and $_GET["select_trans_way"] != "")
-    $sql = $sql . "and payment_type =  " . $_GET["select_trans_way"] . " ";
+    $sql = $sql . "and payment_type =  '" . $_GET["select_trans_way"] . "'";
 
 $result = $conn->query($sql);
 

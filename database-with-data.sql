@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 25, 2020 at 06:24 PM
+-- Generation Time: Jul 05, 2020 at 03:29 PM
 -- Server version: 8.0.20
 -- PHP Version: 7.4.6
 
@@ -54,7 +54,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (28, 361, 1),
 (61, 776, 4),
 (71, 995, 5),
-(45, 1125, 7),
 (41, 1501, 10),
 (33, 381, 7),
 (47, 967, 8),
@@ -191,7 +190,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (5, 1013, 7),
 (38, 739, 10),
 (3, 955, 7),
-(45, 286, 3),
 (19, 1169, 1),
 (59, 316, 4),
 (58, 53, 6),
@@ -262,7 +260,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (38, 356, 10),
 (36, 609, 2),
 (54, 221, 8),
-(45, 946, 1),
 (68, 1113, 10),
 (81, 1124, 10),
 (5, 913, 3),
@@ -372,7 +369,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (86, 1518, 7),
 (44, 1139, 10),
 (34, 1804, 10),
-(45, 1536, 6),
 (12, 1350, 8),
 (20, 1856, 4),
 (14, 840, 9),
@@ -404,7 +400,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (62, 68, 3),
 (83, 1200, 7),
 (7, 232, 9),
-(45, 817, 5),
 (37, 1595, 3),
 (66, 1197, 5),
 (18, 1238, 5),
@@ -425,7 +420,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (23, 775, 1),
 (1, 796, 1),
 (19, 1063, 2),
-(45, 233, 10),
 (80, 1947, 1),
 (73, 1651, 7),
 (78, 1138, 10),
@@ -439,7 +433,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (5, 642, 2),
 (46, 1836, 9),
 (28, 1332, 9),
-(45, 1521, 5),
 (60, 871, 6),
 (3, 5, 9),
 (2, 834, 2),
@@ -464,13 +457,12 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (56, 1540, 3),
 (66, 351, 3),
 (15, 443, 3),
-(45, 836, 6),
 (25, 1906, 10),
 (16, 661, 5),
 (74, 1939, 8),
 (6, 743, 3),
 (24, 1729, 9),
-(54, 1669, 7),
+(54, 1669, 20),
 (82, 1810, 1),
 (20, 416, 6),
 (20, 1654, 10),
@@ -564,7 +556,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (43, 1387, 7),
 (60, 1080, 2),
 (3, 724, 7),
-(45, 1997, 7),
 (15, 797, 6),
 (13, 1711, 3),
 (75, 109, 9),
@@ -831,7 +822,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (21, 932, 4),
 (13, 1457, 3),
 (51, 81, 1),
-(45, 1329, 2),
 (49, 411, 10),
 (61, 1774, 7),
 (84, 1223, 4),
@@ -847,7 +837,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (9, 490, 10),
 (79, 1447, 3),
 (33, 781, 5),
-(45, 688, 9),
 (46, 470, 2),
 (9, 1112, 2),
 (81, 1933, 10),
@@ -949,7 +938,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (17, 569, 8),
 (44, 858, 8),
 (87, 594, 4),
-(45, 1721, 8),
 (41, 1177, 4),
 (8, 1484, 1),
 (46, 251, 2),
@@ -968,7 +956,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (9, 1232, 10),
 (21, 1340, 1),
 (71, 1995, 7),
-(45, 236, 3),
 (18, 1037, 7),
 (11, 1276, 5),
 (54, 459, 9),
@@ -1112,7 +1099,7 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (31, 97, 1),
 (26, 1541, 1),
 (37, 658, 6),
-(67, 258, 9),
+(67, 258, 1),
 (28, 502, 2),
 (20, 450, 3),
 (75, 1463, 8),
@@ -1168,7 +1155,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (34, 1114, 1),
 (60, 848, 7),
 (78, 815, 1),
-(45, 424, 3),
 (20, 383, 10),
 (87, 961, 7),
 (77, 1019, 2),
@@ -1217,7 +1203,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (54, 910, 1),
 (43, 390, 4),
 (65, 780, 2),
-(45, 180, 9),
 (53, 742, 1),
 (39, 499, 5),
 (23, 1701, 7),
@@ -1351,7 +1336,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (76, 1335, 10),
 (66, 1975, 8),
 (41, 1458, 5),
-(45, 274, 6),
 (85, 867, 10),
 (70, 1476, 10),
 (80, 207, 10),
@@ -1469,7 +1453,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (12, 172, 2),
 (14, 1891, 1),
 (24, 862, 7),
-(45, 254, 6),
 (23, 204, 10),
 (75, 195, 9),
 (38, 526, 10),
@@ -1480,7 +1463,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (62, 1214, 9),
 (50, 178, 2),
 (57, 7, 10),
-(45, 1153, 8),
 (4, 1092, 7),
 (61, 771, 8),
 (30, 821, 4),
@@ -1496,7 +1478,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (13, 287, 8),
 (79, 901, 2),
 (39, 1057, 2),
-(45, 1380, 5),
 (3, 860, 3),
 (80, 1438, 6),
 (22, 1961, 9),
@@ -1556,7 +1537,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (24, 1130, 5),
 (51, 16, 5),
 (29, 375, 7),
-(45, 813, 10),
 (60, 295, 4),
 (82, 1076, 8),
 (73, 1658, 1),
@@ -1607,7 +1587,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (35, 21, 7),
 (21, 1613, 8),
 (12, 1686, 6),
-(45, 1716, 9),
 (35, 164, 6),
 (48, 1351, 10),
 (12, 262, 7),
@@ -1670,7 +1649,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (57, 716, 9),
 (4, 94, 10),
 (57, 1053, 7),
-(45, 711, 10),
 (31, 637, 8),
 (24, 1111, 2),
 (55, 1564, 1),
@@ -1689,7 +1667,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (79, 805, 7),
 (74, 764, 6),
 (87, 1434, 10),
-(45, 660, 9),
 (74, 1805, 5),
 (72, 978, 1),
 (84, 1607, 10),
@@ -1727,7 +1704,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (72, 1311, 9),
 (82, 875, 5),
 (84, 171, 3),
-(45, 154, 9),
 (65, 1697, 5),
 (46, 1221, 3),
 (56, 654, 2),
@@ -1783,7 +1759,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (87, 1680, 9),
 (57, 1577, 9),
 (60, 1156, 3),
-(45, 1668, 5),
 (22, 477, 2),
 (32, 1798, 8),
 (7, 911, 10),
@@ -1841,7 +1816,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (51, 1422, 7),
 (73, 746, 3),
 (62, 687, 7),
-(45, 536, 6),
 (67, 1529, 5),
 (10, 1078, 9),
 (73, 1925, 2),
@@ -1996,7 +1970,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (6, 419, 7),
 (29, 1649, 9),
 (14, 1684, 4),
-(45, 1079, 10),
 (34, 1867, 10),
 (36, 565, 4),
 (24, 1323, 9),
@@ -2118,9 +2091,7 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (50, 485, 1),
 (18, 763, 10),
 (6, 593, 7),
-(45, 1055, 8),
 (61, 1775, 9),
-(45, 673, 1),
 (28, 984, 7),
 (8, 1621, 7),
 (37, 1900, 9),
@@ -2268,7 +2239,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (60, 1906, 6),
 (15, 389, 4),
 (50, 231, 9),
-(45, 293, 1),
 (51, 1976, 5),
 (76, 536, 4),
 (49, 1811, 7),
@@ -2311,7 +2281,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (29, 894, 2),
 (51, 395, 2),
 (36, 1021, 2),
-(45, 1040, 4),
 (66, 855, 6),
 (77, 860, 6),
 (30, 415, 10),
@@ -2664,7 +2633,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (2, 1456, 10),
 (31, 1482, 4),
 (26, 1232, 3),
-(45, 450, 2),
 (75, 1817, 1),
 (72, 1875, 9),
 (35, 1382, 8),
@@ -2807,7 +2775,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (63, 1628, 4),
 (43, 1209, 8),
 (14, 1019, 10),
-(45, 1814, 4),
 (44, 1333, 4),
 (50, 1334, 8),
 (70, 1463, 6),
@@ -2904,7 +2871,7 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (55, 1958, 1),
 (19, 1279, 7),
 (79, 1753, 8),
-(43, 1669, 2),
+(43, 1669, 20),
 (46, 577, 5),
 (5, 1496, 4),
 (60, 1924, 8),
@@ -3030,7 +2997,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (12, 141, 3),
 (42, 818, 1),
 (41, 677, 7),
-(45, 1352, 3),
 (74, 256, 4),
 (74, 1589, 6),
 (15, 1819, 9),
@@ -3088,7 +3054,6 @@ INSERT INTO `contains` (`product_id`, `transaction_id`, `quantity_bought`) VALUE
 (27, 115, 7),
 (72, 376, 9),
 (81, 447, 2),
-(45, 196, 3),
 (9, 1396, 6),
 (49, 1547, 4),
 (58, 1451, 5),
@@ -3373,7 +3338,7 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`card_id`, `first_name`, `middle_name`, `last_name`, `street`, `number`, `zip`, `city`, `birth_date`, `relationship_status`, `nr_kids`, `gender`, `phone_number`, `points`) VALUES
-(2, 'Εύα', NULL, 'Παπαδημητροπούλου', 'Αραχόβης', '126-902', '68279', 'Αθήνα', '1990-09-13', 'ελεύθερος', 0, 'Γυναίκα', '6976363498', 6602),
+(2, 'Εύα', '', 'Παπαδημητροπούλου', 'Αραχόβης', '126-902', '68279', 'Αθήνα', '1990-09-14', 'ελεύθερος', 0, 'Γυναίκα', '6976363494', 6602),
 (3, 'Παρασκευάς', 'Δίκαιος', 'Αργυρής', 'Σκληρού', '91-35', '28266', 'Αθήνα', '1948-01-10', 'χωρισμένος', 2, 'Αντρας', '6974276065', 6631),
 (4, 'Εύα', NULL, 'Σελινοπούλου', 'Οξυάς', '3', '43094', 'Βέροια', '1999-11-22', 'ελεύθερος', 0, 'Γυναίκα', '6978448701', 9258),
 (5, 'Αμβρόσιος', NULL, 'Κουκουλιάντας', 'Λεωφ. Τριπύλας', '680-967', '44763', 'Αθήνα', '1967-08-01', 'χωρισμένος', 4, 'Αντρας', '6975968819', 1258),
@@ -3641,7 +3606,6 @@ INSERT INTO `has` (`product_id`, `store_id`, `stored_quantity`, `aisle`, `shelf`
 (72, 5, 151, 9, 8, 39),
 (86, 3, 120, 40, 5, 40),
 (71, 6, 88, 39, 4, 41),
-(45, 4, 13, 14, 8, 42),
 (15, 10, 60, 12, 3, 43),
 (29, 2, 167, 12, 3, 44),
 (49, 7, 82, 40, 4, 45),
@@ -3951,7 +3915,6 @@ INSERT INTO `has` (`product_id`, `store_id`, `stored_quantity`, `aisle`, `shelf`
 (39, 5, 152, 15, 1, 384),
 (62, 5, 147, 29, 8, 385),
 (72, 4, 35, 46, 6, 386),
-(45, 7, 174, 41, 6, 388),
 (65, 9, 195, 56, 9, 389),
 (83, 5, 8, 60, 6, 390),
 (17, 9, 194, 37, 3, 391),
@@ -3967,7 +3930,6 @@ INSERT INTO `has` (`product_id`, `store_id`, `stored_quantity`, `aisle`, `shelf`
 (82, 6, 97, 33, 2, 402),
 (86, 4, 76, 54, 4, 403),
 (5, 2, 181, 24, 9, 404),
-(45, 2, 111, 22, 8, 405),
 (3, 3, 123, 45, 2, 406),
 (71, 7, 187, 58, 3, 407),
 (58, 7, 13, 16, 7, 408),
@@ -3989,13 +3951,11 @@ INSERT INTO `has` (`product_id`, `store_id`, `stored_quantity`, `aisle`, `shelf`
 (25, 2, 119, 59, 3, 425),
 (14, 5, 138, 48, 8, 426),
 (71, 4, 193, 56, 9, 427),
-(45, 5, 52, 54, 2, 428),
 (50, 10, 44, 54, 10, 429),
 (17, 3, 161, 58, 9, 430),
 (71, 2, 188, 24, 7, 431),
 (24, 4, 187, 1, 1, 432),
 (51, 10, 45, 24, 4, 433),
-(45, 9, 140, 15, 10, 435),
 (28, 2, 28, 6, 5, 436),
 (31, 7, 95, 22, 5, 437),
 (55, 9, 150, 12, 2, 438),
@@ -4037,7 +3997,6 @@ INSERT INTO `has` (`product_id`, `store_id`, `stored_quantity`, `aisle`, `shelf`
 (49, 6, 67, 48, 9, 477),
 (37, 4, 138, 38, 10, 478),
 (69, 7, 22, 16, 4, 479),
-(45, 3, 85, 48, 5, 480),
 (60, 5, 192, 5, 10, 481),
 (33, 4, 110, 43, 1, 482),
 (51, 8, 100, 23, 2, 483),
@@ -4065,9 +4024,9 @@ INSERT INTO `has` (`product_id`, `store_id`, `stored_quantity`, `aisle`, `shelf`
 -- (See below for the actual view)
 --
 CREATE TABLE `latest_prices` (
-`has_id` int
+`date` datetime
+,`has_id` int
 ,`price` int
-,`date` datetime
 );
 
 -- --------------------------------------------------------
@@ -4078,12 +4037,12 @@ CREATE TABLE `latest_prices` (
 --
 CREATE TABLE `most_frequent_products_by_id` (
 `card_id` int
-,`transaction_id` int
+,`category` varchar(30)
+,`cnt` bigint
 ,`product_id` int
 ,`product_name` varchar(100)
-,`category` varchar(30)
 ,`store_brand` tinyint(1)
-,`cnt` bigint
+,`transaction_id` int
 );
 
 -- --------------------------------------------------------
@@ -4145,7 +4104,6 @@ INSERT INTO `price_log` (`price_log_id`, `date`, `value`, `has_id`) VALUES
 (43, '2019-11-18 18:56:53', 149, 267),
 (44, '2018-01-14 13:20:08', 28, 112),
 (45, '2019-01-04 10:10:14', 79, 46),
-(46, '2020-12-06 08:12:06', 63, 405),
 (47, '2020-01-26 11:32:33', 179, 474),
 (48, '2019-07-01 10:18:31', 77, 276),
 (50, '2020-01-15 14:56:53', 101, 150),
@@ -4185,7 +4143,6 @@ INSERT INTO `price_log` (`price_log_id`, `date`, `value`, `has_id`) VALUES
 (87, '2018-01-06 15:59:08', 145, 53),
 (88, '2019-11-01 08:47:53', 11, 73),
 (89, '2019-07-22 08:30:25', 60, 69),
-(90, '2020-08-12 14:18:23', 162, 435),
 (91, '2019-08-27 13:35:27', 118, 364),
 (92, '2018-03-04 10:32:27', 127, 256),
 (93, '2020-05-17 14:46:13', 105, 302),
@@ -4224,7 +4181,6 @@ INSERT INTO `price_log` (`price_log_id`, `date`, `value`, `has_id`) VALUES
 (131, '2018-08-24 15:55:49', 135, 384),
 (132, '2019-07-10 11:10:00', 142, 287),
 (133, '2020-02-02 18:12:57', 1, 185),
-(135, '2018-11-24 19:44:05', 164, 428),
 (136, '2019-08-16 18:33:33', 127, 314),
 (137, '2020-01-24 14:13:45', 44, 17),
 (138, '2018-01-21 14:22:29', 152, 81),
@@ -4273,11 +4229,9 @@ INSERT INTO `price_log` (`price_log_id`, `date`, `value`, `has_id`) VALUES
 (185, '2018-07-12 17:51:43', 133, 165),
 (186, '2019-02-16 13:38:13', 3, 407),
 (187, '2018-08-13 18:31:34', 123, 153),
-(188, '2019-04-01 19:43:19', 95, 42),
 (189, '2020-10-23 13:22:57', 185, 135),
 (190, '2020-11-14 09:24:14', 175, 361),
 (191, '2019-04-11 09:11:43', 27, 22),
-(192, '2020-12-04 11:28:53', 14, 388),
 (193, '2018-04-28 13:00:10', 118, 119),
 (194, '2019-09-13 13:28:27', 56, 132),
 (195, '2018-05-10 10:37:17', 189, 56),
@@ -4532,7 +4486,6 @@ INSERT INTO `price_log` (`price_log_id`, `date`, `value`, `has_id`) VALUES
 (470, '2020-01-22 18:46:57', 187, 38),
 (472, '2019-05-25 17:32:36', 164, 446),
 (473, '2018-02-11 18:33:22', 114, 441),
-(474, '2019-07-25 12:08:43', 71, 480),
 (475, '2019-11-06 14:02:26', 43, 243),
 (476, '2019-02-04 08:52:52', 145, 184),
 (477, '2018-12-19 13:32:56', 61, 309),
@@ -4844,7 +4797,6 @@ INSERT INTO `price_log` (`price_log_id`, `date`, `value`, `has_id`) VALUES
 (821, '2020-10-27 09:56:05', 147, 184),
 (823, '2019-04-12 13:29:14', 89, 238),
 (824, '2018-09-24 10:06:44', 200, 329),
-(825, '2019-07-02 18:09:45', 97, 42),
 (826, '2020-02-28 19:43:55', 80, 252),
 (827, '2019-06-23 15:55:50', 56, 334),
 (828, '2020-07-10 15:09:08', 143, 131),
@@ -4939,7 +4891,6 @@ INSERT INTO `products` (`product_id`, `store_brand`, `category`, `product_name`)
 (42, 1, 'Είδη Κάβας', 'Χίου Φιάλη'),
 (43, 0, 'Είδη Κάβας', 'Corona'),
 (44, 0, 'Είδη Κάβας', 'Χίου Smoked Robust Porter'),
-(45, 1, 'Είδη Προσωπικής Περιποίησης', 'Ξυραφάκι Gillet'),
 (46, 1, 'Είδη Προσωπικής Περιποίησης', 'Μάσκα Ομορφιάς'),
 (47, 1, 'Είδη Προσωπικής Περιποίησης', 'Αποτριχωτική κρέμα προσώπου'),
 (48, 0, 'Είδη Προσωπικής Περιποίησης', 'La Roche Posay Hyalu B5 Serum 30ml'),
@@ -6836,7 +6787,7 @@ INSERT INTO `transaction` (`transaction_id`, `date_time`, `payment_type`) VALUES
 (19, '2019-10-14 16:40:11', 'Κάρτα'),
 (20, '2018-01-22 15:10:11', 'Κάρτα'),
 (21, '2018-07-14 11:56:08', 'Κάρτα'),
-(22, '2020-11-01 18:17:47', 'Μετρητά'),
+(22, '2020-05-15 18:17:47', 'Μετρητά'),
 (23, '2018-03-08 10:44:17', 'Κάρτα'),
 (24, '2019-05-24 17:47:22', 'Μετρητά'),
 (25, '2019-07-15 13:31:59', 'Μετρητά'),
@@ -6881,9 +6832,9 @@ INSERT INTO `transaction` (`transaction_id`, `date_time`, `payment_type`) VALUES
 (64, '2019-05-27 08:49:38', 'Κάρτα'),
 (65, '2019-07-21 12:25:12', 'Κάρτα'),
 (66, '2018-08-22 09:34:51', 'Μετρητά'),
-(67, '2020-01-08 11:33:23', 'Μετρητά'),
+(67, '2020-05-15 11:33:23', 'Μετρητά'),
 (68, '2019-06-09 12:15:57', 'Κάρτα'),
-(69, '2019-06-01 16:12:14', 'Κάρτα'),
+(69, '2020-05-15 16:12:14', 'Κάρτα'),
 (70, '2020-03-06 17:51:38', 'Κάρτα'),
 (71, '2019-08-03 08:04:21', 'Μετρητά'),
 (72, '2019-01-16 13:06:09', 'Κάρτα'),
@@ -7058,21 +7009,21 @@ INSERT INTO `transaction` (`transaction_id`, `date_time`, `payment_type`) VALUES
 (241, '2020-06-09 16:45:19', 'Κάρτα'),
 (242, '2020-06-23 12:10:17', 'Μετρητά'),
 (243, '2020-10-15 11:53:16', 'Μετρητά'),
-(244, '2020-04-09 11:39:47', 'Κάρτα'),
+(244, '2020-05-15 11:39:47', 'Κάρτα'),
 (245, '2020-08-25 16:32:57', 'Μετρητά'),
 (246, '2020-05-26 16:58:53', 'Κάρτα'),
 (247, '2018-11-28 19:00:00', 'Κάρτα'),
 (248, '2018-08-26 17:33:50', 'Μετρητά'),
-(249, '2018-07-13 16:51:56', 'Μετρητά'),
+(249, '2020-05-15 16:51:56', 'Μετρητά'),
 (250, '2020-01-14 19:25:40', 'Μετρητά'),
-(251, '2019-06-01 12:45:02', 'Κάρτα'),
+(251, '2019-04-11 12:45:02', 'Κάρτα'),
 (252, '2018-12-26 10:47:36', 'Κάρτα'),
 (253, '2020-05-20 19:34:05', 'Μετρητά'),
 (254, '2019-07-01 10:53:51', 'Κάρτα'),
 (255, '2019-07-09 10:34:11', 'Μετρητά'),
 (256, '2020-09-06 16:10:21', 'Κάρτα'),
 (257, '2019-02-06 19:14:18', 'Κάρτα'),
-(258, '2020-01-18 12:05:18', 'Μετρητά'),
+(258, '2020-04-11 12:05:18', 'Μετρητά'),
 (259, '2018-07-25 15:07:48', 'Μετρητά'),
 (260, '2020-09-15 17:49:21', 'Κάρτα'),
 (261, '2018-05-23 12:53:16', 'Μετρητά'),
@@ -7402,7 +7353,7 @@ INSERT INTO `transaction` (`transaction_id`, `date_time`, `payment_type`) VALUES
 (585, '2020-02-18 11:39:11', 'Κάρτα'),
 (586, '2019-05-13 17:14:03', 'Μετρητά'),
 (587, '2020-01-01 18:51:54', 'Κάρτα'),
-(588, '2020-05-05 09:36:40', 'Κάρτα'),
+(588, '2020-05-15 09:36:40', 'Κάρτα'),
 (589, '2018-08-14 18:41:41', 'Κάρτα'),
 (590, '2020-03-16 17:49:04', 'Κάρτα'),
 (591, '2018-09-15 10:18:45', 'Μετρητά'),
@@ -8249,7 +8200,7 @@ INSERT INTO `transaction` (`transaction_id`, `date_time`, `payment_type`) VALUES
 (1431, '2019-07-03 19:19:31', 'Κάρτα'),
 (1432, '2019-04-07 09:54:55', 'Κάρτα'),
 (1433, '2018-09-25 11:28:13', 'Κάρτα'),
-(1434, '2020-01-08 12:11:52', 'Μετρητά'),
+(1434, '2020-05-15 12:11:52', 'Μετρητά'),
 (1435, '2018-05-10 08:06:34', 'Κάρτα'),
 (1436, '2019-10-04 15:00:40', 'Μετρητά'),
 (1437, '2018-11-01 13:13:35', 'Κάρτα'),
@@ -8317,7 +8268,7 @@ INSERT INTO `transaction` (`transaction_id`, `date_time`, `payment_type`) VALUES
 (1499, '2018-05-21 17:01:04', 'Κάρτα'),
 (1500, '2020-11-14 15:29:02', 'Μετρητά'),
 (1501, '2019-02-09 17:42:03', 'Κάρτα'),
-(1502, '2020-06-25 15:53:14', 'Μετρητά'),
+(1502, '2020-05-15 15:53:14', 'Μετρητά'),
 (1503, '2020-04-09 08:14:55', 'Κάρτα'),
 (1504, '2020-06-07 09:59:00', 'Μετρητά'),
 (1505, '2020-11-14 15:37:49', 'Μετρητά'),
@@ -8400,7 +8351,7 @@ INSERT INTO `transaction` (`transaction_id`, `date_time`, `payment_type`) VALUES
 (1582, '2019-08-20 19:47:46', 'Κάρτα'),
 (1583, '2018-02-19 09:44:36', 'Μετρητά'),
 (1584, '2018-05-24 19:03:53', 'Μετρητά'),
-(1585, '2020-05-27 15:09:20', 'Μετρητά'),
+(1585, '2020-04-11 15:09:20', 'Μετρητά'),
 (1586, '2018-03-28 11:43:24', 'Κάρτα'),
 (1587, '2020-07-28 16:28:06', 'Κάρτα'),
 (1588, '2019-09-16 17:22:17', 'Κάρτα'),
@@ -8823,14 +8774,15 @@ INSERT INTO `transaction` (`transaction_id`, `date_time`, `payment_type`) VALUES
 -- (See below for the actual view)
 --
 CREATE TABLE `transactions` (
-`transaction_id` int
-,`NAME` varchar(92)
-,`store_id` int
-,`store_name` varchar(124)
+`card_id` int
 ,`date_time` datetime
-,`total` decimal(42,0)
+,`NAME` varchar(92)
 ,`payment_type` varchar(10)
 ,`points` decimal(45,2)
+,`store_id` int
+,`store_name` varchar(124)
+,`total` decimal(42,0)
+,`transaction_id` int
 );
 
 -- --------------------------------------------------------
@@ -8840,17 +8792,17 @@ CREATE TABLE `transactions` (
 -- (See below for the actual view)
 --
 CREATE TABLE `transactions_with_customers` (
-`store_id` int
-,`transaction_id` int
-,`date_time` datetime
-,`payment_type` varchar(10)
-,`card_id` int
-,`store_area` int
-,`operating_hours` text
-,`street` varchar(50)
-,`number` varchar(10)
-,`zip` varchar(10)
+`card_id` int
 ,`city` varchar(50)
+,`date_time` datetime
+,`number` varchar(10)
+,`operating_hours` text
+,`payment_type` varchar(10)
+,`store_area` int
+,`store_id` int
+,`street` varchar(50)
+,`transaction_id` int
+,`zip` varchar(10)
 );
 
 -- --------------------------------------------------------
@@ -8860,8 +8812,8 @@ CREATE TABLE `transactions_with_customers` (
 -- (See below for the actual view)
 --
 CREATE TABLE `transaction_total_cost` (
-`transaction_id` int
-,`total` decimal(42,0)
+`total` decimal(42,0)
+,`transaction_id` int
 );
 
 -- --------------------------------------------------------
@@ -8889,7 +8841,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `transactions`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `transactions`  AS  select `transactions_with_customers`.`transaction_id` AS `transaction_id`,concat(`c`.`first_name`,' ',coalesce(`c`.`middle_name`,''),' ',`c`.`last_name`) AS `NAME`,`transactions_with_customers`.`store_id` AS `store_id`,concat(`transactions_with_customers`.`street`,' ',`transactions_with_customers`.`number`,', ',`transactions_with_customers`.`zip`,' ',`transactions_with_customers`.`city`) AS `store_name`,`transactions_with_customers`.`date_time` AS `date_time`,`transaction_total_cost`.`total` AS `total`,`transactions_with_customers`.`payment_type` AS `payment_type`,(0.10 * `transaction_total_cost`.`total`) AS `points` from ((`transactions_with_customers` join `transaction_total_cost` on((`transactions_with_customers`.`transaction_id` = `transaction_total_cost`.`transaction_id`))) join (select `customer`.`first_name` AS `first_name`,`customer`.`middle_name` AS `middle_name`,`customer`.`last_name` AS `last_name`,`customer`.`card_id` AS `card_id` from `customer`) `c` on((`transactions_with_customers`.`card_id` = `c`.`card_id`))) order by `transactions_with_customers`.`date_time` desc ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `transactions`  AS  select `transactions_with_customers`.`transaction_id` AS `transaction_id`,`c`.`card_id` AS `card_id`,concat(`c`.`first_name`,' ',coalesce(`c`.`middle_name`,''),' ',`c`.`last_name`) AS `NAME`,`transactions_with_customers`.`store_id` AS `store_id`,concat(`transactions_with_customers`.`street`,' ',`transactions_with_customers`.`number`,', ',`transactions_with_customers`.`zip`,' ',`transactions_with_customers`.`city`) AS `store_name`,`transactions_with_customers`.`date_time` AS `date_time`,`transaction_total_cost`.`total` AS `total`,`transactions_with_customers`.`payment_type` AS `payment_type`,(0.10 * `transaction_total_cost`.`total`) AS `points` from ((`transactions_with_customers` join `transaction_total_cost` on((`transactions_with_customers`.`transaction_id` = `transaction_total_cost`.`transaction_id`))) join (select `customer`.`first_name` AS `first_name`,`customer`.`middle_name` AS `middle_name`,`customer`.`last_name` AS `last_name`,`customer`.`card_id` AS `card_id` from `customer`) `c` on((`transactions_with_customers`.`card_id` = `c`.`card_id`))) order by `transactions_with_customers`.`date_time` desc ;
 
 -- --------------------------------------------------------
 
@@ -8932,7 +8884,9 @@ ALTER TABLE `customer`
 ALTER TABLE `has`
   ADD PRIMARY KEY (`has_id`),
   ADD KEY `product_id` (`product_id`),
-  ADD KEY `store_id` (`store_id`);
+  ADD KEY `store_id` (`store_id`),
+  ADD KEY `product_fk_idx` (`product_id`),
+  ADD KEY `store_fk_idx` (`store_id`);
 
 --
 -- Indexes for table `price_log`
@@ -8945,7 +8899,8 @@ ALTER TABLE `price_log`
 -- Indexes for table `products`
 --
 ALTER TABLE `products`
-  ADD PRIMARY KEY (`product_id`);
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `prod_cat` (`category`);
 
 --
 -- Indexes for table `purchase`
@@ -9016,7 +8971,7 @@ ALTER TABLE `transaction`
 -- Constraints for table `contains`
 --
 ALTER TABLE `contains`
-  ADD CONSTRAINT `contains_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `contains_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `contains_ibfk_2` FOREIGN KEY (`transaction_id`) REFERENCES `transaction` (`transaction_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --

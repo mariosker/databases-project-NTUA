@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 03, 2020 at 05:17 PM
+-- Generation Time: Jul 05, 2020 at 03:29 PM
 -- Server version: 8.0.20
 -- PHP Version: 7.4.6
 
@@ -89,9 +89,9 @@ CREATE TABLE `has` (
 -- (See below for the actual view)
 --
 CREATE TABLE `latest_prices` (
-`has_id` int
+`date` datetime
+,`has_id` int
 ,`price` int
-,`date` datetime
 );
 
 -- --------------------------------------------------------
@@ -102,12 +102,12 @@ CREATE TABLE `latest_prices` (
 --
 CREATE TABLE `most_frequent_products_by_id` (
 `card_id` int
-,`transaction_id` int
+,`category` varchar(30)
+,`cnt` bigint
 ,`product_id` int
 ,`product_name` varchar(100)
-,`category` varchar(30)
 ,`store_brand` tinyint(1)
-,`cnt` bigint
+,`transaction_id` int
 );
 
 -- --------------------------------------------------------
@@ -183,15 +183,15 @@ CREATE TABLE `transaction` (
 -- (See below for the actual view)
 --
 CREATE TABLE `transactions` (
-`transaction_id` int
-,`card_id` int
-,`NAME` varchar(92)
-,`store_id` int
-,`store_name` varchar(124)
+`card_id` int
 ,`date_time` datetime
-,`total` decimal(42,0)
+,`NAME` varchar(92)
 ,`payment_type` varchar(10)
 ,`points` decimal(45,2)
+,`store_id` int
+,`store_name` varchar(124)
+,`total` decimal(42,0)
+,`transaction_id` int
 );
 
 -- --------------------------------------------------------
@@ -201,17 +201,17 @@ CREATE TABLE `transactions` (
 -- (See below for the actual view)
 --
 CREATE TABLE `transactions_with_customers` (
-`store_id` int
-,`transaction_id` int
-,`date_time` datetime
-,`payment_type` varchar(10)
-,`card_id` int
-,`store_area` int
-,`operating_hours` text
-,`street` varchar(50)
-,`number` varchar(10)
-,`zip` varchar(10)
+`card_id` int
 ,`city` varchar(50)
+,`date_time` datetime
+,`number` varchar(10)
+,`operating_hours` text
+,`payment_type` varchar(10)
+,`store_area` int
+,`store_id` int
+,`street` varchar(50)
+,`transaction_id` int
+,`zip` varchar(10)
 );
 
 -- --------------------------------------------------------
@@ -221,8 +221,8 @@ CREATE TABLE `transactions_with_customers` (
 -- (See below for the actual view)
 --
 CREATE TABLE `transaction_total_cost` (
-`transaction_id` int
-,`total` decimal(42,0)
+`total` decimal(42,0)
+,`transaction_id` int
 );
 
 -- --------------------------------------------------------
@@ -380,7 +380,7 @@ ALTER TABLE `transaction`
 -- Constraints for table `contains`
 --
 ALTER TABLE `contains`
-  ADD CONSTRAINT `contains_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `contains_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `contains_ibfk_2` FOREIGN KEY (`transaction_id`) REFERENCES `transaction` (`transaction_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
